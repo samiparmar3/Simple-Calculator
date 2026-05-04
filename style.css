@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0f172a;
+}
+
+.container{
+    background:#1e293b;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+#display{
+    width:100%;
+    height:70px;
+    margin-bottom:20px;
+    padding:10px;
+    border-radius:10px;
+    background:#020617;
+    color:#fff;
+    text-align:right;
+    font-size:28px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    overflow:hidden;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(4,70px);
+    gap:15px;
+}
+
+button{
+    height:60px;
+    border:none;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    background:#334155;
+    color:#fff;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#475569;
+}
+
+button:active{
+    transform:scale(0.95);
+}
+
+.operator{
+    background:#f59e0b;
+    color:#000;
+}
+
+.operator:hover{
+    background:#fbbf24;
+}
+
+#clearBtn{
+    background:#ef4444;
+}
+
+#clearBtn:hover{
+    background:#f87171;
+}
+
+#delBtn{
+    background:#e11d48;
+}
+
+#delBtn:hover{
+    background:#fb7185;
+}
+
+#equal{
+    grid-column:span 2;
+    background:#22c55e;
+    color:#000;
+}
+
+#equal:hover{
+    background:#4ade80;
+}
